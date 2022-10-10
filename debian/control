@@ -11,8 +11,8 @@ Build-Depends:
  zlib1g-dev | libz-dev,
  quilt,
  xutils-dev (>= 1:7.5+4),
-Standards-Version: 4.6.0
-Vcs-Git: https://salsa.debian.org/xorg-team/lib/xft
+Standards-Version: 4.6.1
+Vcs-Git: https://salsa.debian.org/xorg-team/lib/xft.git
 Vcs-Browser: https://salsa.debian.org/xorg-team/lib/xft
 
 Package: libxft2
@@ -30,11 +30,12 @@ Description: FreeType-based font drawing library for X
  glyph drawing; otherwise, the core X protocol is used.
 
 Package: libxft2-udeb
-XC-Package-Type: udeb
+Package-Type: udeb
 Section: debian-installer
 Architecture: any
 Depends:
  ${shlibs:Depends},
+ ${misc:Depends},
 Description: FreeType-based font drawing library for X
  This is a udeb, or a microdeb, for the debian-installer.
 
